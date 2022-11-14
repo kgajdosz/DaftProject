@@ -6,6 +6,7 @@ import org.apache.commons.lang3.RandomStringUtils;
 
 public class Constants 
 {
+	// example of constant class
 	static Random r = new Random();
 	static int randomInt = r.nextInt(1000);
 	//DATA FOR REGISDTRATION PROCESS

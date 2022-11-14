@@ -16,13 +16,6 @@ public class BaseObject
     @FindBy(tagName= "body")
     WebElement page;
 
-    // that method is killing the process if it is still running - quick solution
-    public static void killProcess() throws Exception {
-
-        Runtime.getRuntime().exec("taskkill /F /IM WINWORD.EXE");
-
-    }
-
     public boolean isSearchWordPresent(String word)
     {
         String pageURL = driver.getCurrentUrl();

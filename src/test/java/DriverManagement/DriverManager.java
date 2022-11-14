@@ -34,14 +34,13 @@ public class DriverManager extends TestBase{
 
 	}
        //Stopping the WebDriver method
-	public static void killDriver() throws Exception {
+	public static void killDriver(){
 		driver.close();
 		//that if statement is presented only to make sure that browser is killed
 		// if (!BROWSER_TYPE.equals(BrowserType.FIREFOX))
 			 driver.quit();
          
 		driver = null;
-		BaseObject.killProcess();
 
 	}
 

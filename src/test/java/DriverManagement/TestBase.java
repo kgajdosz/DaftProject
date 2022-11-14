@@ -31,6 +31,8 @@ public class TestBase {
    //Before each test always runs
 	@BeforeMethod
 	public void before() {
+		// line below switches off all the debug logs from the console
+		System.setProperty("org.freemarker.loggerLibrary", "none");
 		//start the WebDriver before the method
 		driver = DriverManager.getWebDriver();
 		// Maximize the window
@@ -39,6 +41,7 @@ public class TestBase {
 		driver.get("http://www.daft.ie");
 		// delete cookies
 		driver.manage().deleteAllCookies();
+
 	}
 	//After each test always runs
 	@AfterMethod
